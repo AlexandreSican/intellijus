@@ -12,6 +12,8 @@ export const ContainerBig = styled.div`
     height: 100vh;
     width: 100vw;
     background-color: #15253F;
+
+    
     
 `
 
@@ -20,6 +22,17 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
+    @media (max-width: 1280px) {
+        max-width: 1024px ;
+    }
+    @media (max-width: 1024px) {
+        max-width: 738px ;
+    }
+    @media (max-width: 750px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 export const ContainerText = styled.div`
@@ -29,6 +42,10 @@ export const ContainerText = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    @media (max-width: 740px) {
+        width: 100%;
+        height: 50%;
+    }
 `
 
 export const ContainerImages = styled.div`
@@ -39,6 +56,10 @@ export const ContainerImages = styled.div`
     justify-content: left;
     align-items: center;
     position: relative;
+    @media (max-width: 740px) {
+        width: 100%;
+        height: 50%;
+    }
 `
 
 export const AboutTextTitle = styled.h1`
@@ -51,6 +72,10 @@ export const AboutTextDescription = styled.p`
     font-size: 20px;
     color: #c3c3c3;
     width: 413px;
+    @media (max-width: 1280px) {
+        width: 100%;
+        
+    }
 `
 
 export const ImageOne = styled.div`
@@ -65,6 +90,30 @@ export const ImageOne = styled.div`
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
+    @media (max-width: 1024px) {
+        width: 200px;
+        height: 200px;
+        
+    }
+    @media (max-width: 740px) {
+        width: 150px;
+        height: 150px;
+        top: 35%;
+        left: 0;
+    }
+    @media (max-width: 440px) {
+        width: 150px;
+        height: 150px;
+        top: 15%;
+        left: 5%;
+    }
+    @media (max-width: 330px) {
+        width: 120px;
+        height: 120px;
+        top: 15%;
+        left: 5%;
+        z-index: 999;
+    }
 `
 export const ImageTwo = styled.div`
     width: 305px;
@@ -78,6 +127,31 @@ export const ImageTwo = styled.div`
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
+    @media (max-width: 1024px) {
+        width: 200px;
+        height: 200px;
+        
+    }
+    @media (max-width: 740px) {
+        width: 150px;
+        height: 150px;
+        top: 15%;
+        left: 25%;
+    }
+    @media (max-width: 440px) {
+        width: 150px;
+        height: 150px;
+        top: 35%;
+        left: 32%;
+        z-index: 999;
+    }
+    @media (max-width: 330px) {
+        width: 120px;
+        height: 120px;
+        top: 35%;
+        left: 32%;
+        z-index: 999;
+    }
 `
 export const ImageThree = styled.div`
     width: 305px;
@@ -91,4 +165,26 @@ export const ImageThree = styled.div`
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
+    @media (max-width: 1024px) {
+        width: 200px;
+        height: 200px;
+    }
+    @media (max-width: 740px) {
+        width: 150px;
+        height: 150px;
+        top: 35%;
+        left: 60%;
+    }
+    @media (max-width: 440px) {
+        width: 150px;
+        height: 150px;
+        top: 15%;
+        left: 60%;
+    }
+    @media (max-width: 330px) {
+        width: 120px;
+        height: 120px;
+        top: 15%;
+        left: 60%;
+    }
 `

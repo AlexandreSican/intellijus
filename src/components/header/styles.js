@@ -16,6 +16,15 @@ export const Container = styled.div`
     transform: translateX(-50%);
     z-index: 999;
 
+    @media (max-width: 730px) {
+        justify-content: space-around;
+        width: 730px;
+    }
+    @media (max-width: 440px) {
+        justify-content: space-around;
+        width: 400px;
+    }
+
 `
 
 export const ContainerBig = styled.div`
@@ -31,6 +40,9 @@ export const ContainerBig = styled.div`
     z-index: 999;
     background-color: ${ props => props.isSticky ? 'rgba(18, 18, 18, 1)' : 'rgba(18, 18, 18, 0)' };
     transition: all ease 0.6s;
+    @media (max-width: 730px) {
+        justify-content: space-around;
+    }
 `
 
 
@@ -47,7 +59,7 @@ export const LogoBox = styled.div`
 `
 
 export const LogoContainer = styled.div`
-    width: 10%;
+    width: 88px;
     display: flex;
     //background-color: white;
 `
@@ -57,6 +69,11 @@ export const MenuContainer = styled.div`
     width: 80%;
     height: 100px;
    // background-color: gray;
+
+   @media (max-width: 730px) {
+        display: none;
+    }
+   
 `
 
 export const MenuList = styled.ul`
@@ -98,6 +115,9 @@ export const LoginContainer = styled.div`
     align-items: center;
     justify-content: center;
     
+    @media (max-width: 440px) {
+        width: 70px;
+    }
    // background-color: red;
 `
 

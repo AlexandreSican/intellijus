@@ -38,14 +38,26 @@ export const Container = styled.div`
 
 export const ContainerBig = styled.div`
     max-width: 1280px;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 
+    @media (max-width: 1280px) {
+        max-width: 1024px;
+    }
+    @media (max-width: 1024px) {
+        max-width: 900px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 600px;
+    }
+    @media (max-width: 435px) {
+        width: 365px;
+    }
 `
 
 export const HomeText = styled.div`
@@ -57,6 +69,13 @@ export const HomeText = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+   
+
 `
 
 export const HomeTextTitle = styled.h1`
@@ -65,6 +84,11 @@ export const HomeTextTitle = styled.h1`
     line-height: 77px;
     letter-spacing: 8px;
     overflow-y: hidden;
+
+    @media (max-width: 768px) {
+        letter-spacing: 6px;
+    }
+
 `
 
 export const HomeTextSubTitle = styled.h2`
@@ -94,11 +118,18 @@ export const HomeButton = styled.button`
         animation: ${ButtonAnimation} ease 1s infinite;
     }
 
+    @media (max-width: 435px) {
+        width: 350px;
+    }
+
 `
 
 export const HomeBlanked = styled.div`
     width: 50%;
     height: 90%;
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const HomeMore = styled.h1`
