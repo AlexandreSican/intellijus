@@ -41,7 +41,8 @@ export const ContainerBig = styled.div`
     background-color: ${ props => props.isSticky ? 'rgba(18, 18, 18, 1)' : 'rgba(18, 18, 18, 0)' };
     transition: all ease 0.6s;
     @media (max-width: 730px) {
-        justify-content: space-around;
+        justify-content: space-between;
+        
     }
 `
 
@@ -117,6 +118,7 @@ export const LoginContainer = styled.div`
     
     @media (max-width: 440px) {
         width: 70px;
+
     }
    // background-color: red;
 `

@@ -12,6 +12,39 @@ export const Container = styled.div`
 export const ContainerSmall = styled.div`
     width: 40vw;
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 1440px) {
+        width: 60%;
+        height: 100%;
+        
+    }
+    @media (max-width: 1024px) {
+        width: 70%;
+        height: 100%;
+        
+    }
+     @media (max-width: 740px) {
+        width: 100%;
+        
+    }
+    @media (max-width: 440px) {
+        width: 100%;
+        
+    }
+    @media (max-width: 340px) {
+        width: 100%;
+        
+    }
+    /*@media (max-width: 330px) {
+        width: 120px;
+        height: 120px;
+        top: 15%;
+        left: 5%;
+        z-index: 999;
+    } */
 `
 export const ContainerLogo = styled.div`
     width: 100%;
@@ -31,6 +64,16 @@ export const ContainerInfo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 440px) {
+        width: 90%;
+        
+    }
+    @media (max-width: 340px) {
+        width: 90%;
+        
+    }
+
 `
 export const ContainerInfoForm = styled.form`
     width: 80%;
@@ -41,8 +84,16 @@ export const ContainerInfoForm = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 67px;
+    padding: 30px;
     gap: 20px;
+    @media (max-width: 440px) {
+        width: 100%;
+        
+    }
+    @media (max-width: 340px) {
+        width: 100%;
+        
+    }
 `
 export const InfoFormLabel = styled.label`
     font-size: 40px;
@@ -65,6 +116,15 @@ export const InfoFormInput = styled.input`
     outline: none;
 
    margin-bottom: 20px;
+
+   @media (max-width: 440px) {
+        width: 100%;
+        font-size: 24px;
+    }
+    @media (max-width: 340px) {
+        width: 100%;
+        font-size: 22px;
+    }
 `
 
 
