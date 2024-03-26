@@ -7,7 +7,7 @@ import img4 from '../../../assets/img4seguranca.png'
 
 const Security = () => {
     return (
-        <C.ContainerBig>
+        <C.ContainerBig id='security'>
             <C.Container>
                 <C.ContainerImage>
                     <C.SupImage>

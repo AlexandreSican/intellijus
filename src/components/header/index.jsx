@@ -39,7 +39,7 @@ const Header = () => {
                         <C.MenuAnchor href='#about' isSticky={isSticky}><C.MenuItems>Sobre</C.MenuItems></C.MenuAnchor>
                         <C.MenuAnchor href='#product' isSticky={isSticky}><C.MenuItems>Produto</C.MenuItems></C.MenuAnchor>
                         <C.MenuAnchor href='#security' isSticky={isSticky}><C.MenuItems>Segurança</C.MenuItems></C.MenuAnchor>
-                        <C.MenuAnchor href='#contacts' isSticky={isSticky}><C.MenuItems>Contato</C.MenuItems></C.MenuAnchor>
+                        <C.MenuAnchor href='#contact' isSticky={isSticky}><C.MenuItems>Contato</C.MenuItems></C.MenuAnchor>
                     </C.MenuList>
                 </C.MenuContainer>
                 <C.LoginContainer>
