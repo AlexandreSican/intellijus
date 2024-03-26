@@ -65,16 +65,45 @@ export const ContainerImages = styled.div`
 export const AboutTextTitle = styled.h1`
     font-size: 64px;
     color: #c3c3c3;
+    @media (max-width: 740px) {
+        margin-top: 130px;
+        margin-left: 50px;
+    }
+    @media (max-width: 330px) {
+        margin-left: 15px;
+    }
+    
 
 `
 
-export const AboutTextDescription = styled.p`
+export const AboutTextDescriptionBig = styled.p`
     font-size: 20px;
     color: #c3c3c3;
     width: 413px;
     @media (max-width: 1280px) {
         width: 100%;
         
+    }
+    @media (max-width: 740px) {
+        display: none;
+    }
+
+`
+export const AboutTextDescriptionSmall = styled.p`
+    font-size: 20px;
+    color: #c3c3c3;
+    width: 413px;
+    display: none;
+    @media (max-width: 1280px) {
+        width: 100%;
+    }
+    @media (max-width: 740px) {
+        display: block;
+        width: 278px;
+        margin-left: 50px;
+    }
+    @media (max-width: 330px) {
+        margin-left: 15px;
     }
 `
 
